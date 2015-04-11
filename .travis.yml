@@ -8,6 +8,7 @@ install:
   - PYTHONPATH=$PYTHONPATH:$PWD/prisoner
 
 script:
+  - coconut prisoner
   - python competition
 
 notifications:
