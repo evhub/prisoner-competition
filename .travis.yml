@@ -8,8 +8,6 @@ env:
 
 install:
   - git clone https://github.com/evhub/prisoner.git
-  - pip install coconut
-  - coconut prisoner
 
 script:
   - python competition
