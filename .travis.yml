@@ -1,0 +1,13 @@
+language: python
+
+python:
+  - "3.4"
+
+install:
+  - git clone https://github.com/evhub/prisoner.git
+
+script:
+  - python competition
+
+notifications:
+  email: false
