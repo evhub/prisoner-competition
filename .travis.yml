@@ -3,9 +3,11 @@ language: python
 python:
   - "3.4"
 
+env:
+  - PYTHONPATH="$PYTHONPATH:$PWD/prisoner"
+
 install:
   - git clone https://github.com/evhub/prisoner.git
-  - PYTHONPATH=$PYTHONPATH:$PWD/prisoner
   - pip install coconut
   - coconut prisoner
 
