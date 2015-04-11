@@ -5,6 +5,7 @@ python:
 
 install:
   - git clone https://github.com/evhub/prisoner.git
+  - PYTHONPATH = $PYTHONPATH:$PWD/prisoner
 
 script:
   - python competition
