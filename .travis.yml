@@ -11,8 +11,11 @@ env:
 
 install:
   - git clone https://github.com/evhub/prisoner.git
+  - git clone https://github.com/evhub/coconut.git
+  - pip install ./coconut
 
 script:
+  - coconut prisoner
   - python competition
 
 notifications:
